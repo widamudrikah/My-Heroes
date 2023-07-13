@@ -1,13 +1,250 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Kablammo', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #D4ADFC;
 }
+
+body.login-page {
+  background-image: url(../public/img/bg_login_regis.svg);
+  font-family: 'Ysabeau Office', sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body.admin-page {
+  font-family: 'Ysabeau Office', sans-serif;
+  background-color: #D4ADFC;
+}
+
+@media (max-width: 767px) {
+  body.login-page {
+    background-size: contain;
+  }
+}
+.navbar {
+  background-color: rgba(135, 54, 211, 0.5);
+  backdrop-filter: blur(5px) brightness(200%);
+  margin-top: 2px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar.color-active {
+  background-color: rgba(76, 21, 128, 0.744);
+  transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  padding: 15px 0 15px 0;
+  }
+
+  .hero{
+    background-image: url(../src/assets/img/hero/blue.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: Tomorrow;
+  padding-top: 70px;
+  
+  }
+
+.paragraf{
+    color: rgb(116, 117, 124);
+    text-align: center;
+    padding: 10px;
+}
+
+.small-paragraf {
+  font-size: 30px;
+  color: white;
+}
+
+.border {
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+  color: black;
+}
+
+
+.gulir{
+  color: rgba(28, 28, 94, 0.749);
+  font-family: Oswald;
+}
+
+.bg-body-tertiary{
+  font-family: fantasy;
+}
+
+.kata{
+  text-align: center;
+  font-family: Caprasimo;
+  size: bold;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.gallery img{
+  display: flex;
+justify-content: center;
+margin-top: 10px;
+
+}
+
+.gallery{
+  background-color: #ffffff;
+}
+
+.logo-image {
+  width: 90px; 
+  height: auto;
+ 
+}
+
+@media screen and (max-width: 992px) {
+  .services{
+      padding-top: 100px;
+  }
+}
+
+.button-cari {
+  background-color: #0C134F;
+  border-radius: 40px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button-cari:hover {
+  background-color: #5C469C;
+  border-radius: 40px;
+}
+
+.form-search {
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+}
+
+.form-search .form-control {
+  width: 150px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.form-search .form-control:hover {
+  background-color: #D4ADFC;
+}
+
+.form-search .button-cari {
+  height: 30px;
+  padding: 0 10px;
+}
+
+.footer {
+  background-color: rgba(123, 67, 179, 0.5); /* Atur warna latar belakang dengan tingkat transparansi */
+  backdrop-filter: blur(60px);
+}
+
+
+.card-login {
+  background-color: rgba(205, 204, 207, 0.5); /* Mengatur warna latar belakang dengan transparansi */
+  width: 400px; /* Sesuaikan lebar card dengan kebutuhan Anda */
+  height: 600px; /* Sesuaikan tinggi card dengan kebutuhan Anda */
+  position: absolute; /* Mengatur posisi card menjadi absolut */
+  top: 50%; /* Mengatur posisi vertical card menjadi di tengah */
+  left: 50%; /* Mengatur posisi horizontal card menjadi di tengah */
+  transform: translate(-50%, -50%); /* Menggeser card ke tengah secara tepat */
+}
+
+.salam {
+  font-weight: 700;
+  text-align: left;
+  margin-left: 3px;
+  margin-top: 35px;
+}
+.ayo {
+  text-align: left;
+  font-weight: 500;
+  margin-left: 3px;
+}
+
+.label {
+  margin-top: 10px;
+  margin-left: 3px;
+  text-align: left;
+  float: left;
+  font-weight: 500;
+}
+
+.btn-login {
+  color: aqua;
+  background-color: #0C134F;
+  margin-top: 30px;
+  text-align: left;
+  float: left;
+  width: 375px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sudah {
+ font-weight: 500;
+}
+.login-span {
+  font-weight: 600;
+  color: aqua;
+}
+
+.detail-kisah {
+  color: #0C134F;
+  border: 1px solid #0C134F;
+  border-radius: 10px;
+  background-color: #D4ADFC;
+  backdrop-filter: blur(5px);
+}
+
+.table-kisah {
+  margin-top: 40px;
+}
+
+.card-tambah-kisah {
+  width: 800px; /* Sesuaikan lebar card dengan kebutuhan Anda */
+  height: 600px; /* Sesuaikan tinggi card dengan kebutuhan Anda */
+  position: absolute; /* Mengatur posisi card menjadi absolut */
+  top: 50%; /* Mengatur posisi vertical card menjadi di tengah */
+  left: 50%; /* Mengatur posisi horizontal card menjadi di tengah */
+  transform: translate(-50%, -50%);
+}
+
+.btn-tambah{
+  color: aqua;
+  background-color: #0C134F;
+  margin-top: 30px;
+  width: 375px;
+  text-align: center;
+  margin-bottom: 10px;
+  border: 1px solid #0C134F;
+  border-radius: 10px;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Detail kisah */
